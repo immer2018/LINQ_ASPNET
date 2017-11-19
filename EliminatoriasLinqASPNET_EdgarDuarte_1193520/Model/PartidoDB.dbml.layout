@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PartidoDB">
+  <DataContextMoniker Name="/PartidoDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e248cbf2-2f69-4252-8288-2a65576ccb1c" absoluteBounds="3.25, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PartidoDBDataContext/detalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e2006a4-01b2-4524-8d3f-1b5a906ddecc" absoluteBounds="3.265, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e96b115-743a-47c3-93e4-c2fa78914aef" absoluteBounds="0.5, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PartidoDBDataContext/equipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88b1df6f-6afa-48e4-8108-d6ee6055c7d2" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3586749c-4c35-4d8f-9a7d-8b25861826af" absoluteBounds="2.5, 3.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PartidoDBDataContext/fecha" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50beca2a-7308-4a9b-9528-b3ee17bec2eb" absoluteBounds="2.515, 3.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 3.125); (3.875 : 2.07859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PartidoDBDataContext/fecha/fecha_detalle" />
+      <nodes>
+        <classShapeMoniker Id="3586749c-4c35-4d8f-9a7d-8b25861826af" />
+        <classShapeMoniker Id="e248cbf2-2f69-4252-8288-2a65576ccb1c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.46875 : 1.8862939453125); (1.46875 : 3.91429768880208); (2.5 : 3.91429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PartidoDBDataContext/equipo/equipo_fecha" />
+      <nodes>
+        <classShapeMoniker Id="1e96b115-743a-47c3-93e4-c2fa78914aef" />
+        <classShapeMoniker Id="3586749c-4c35-4d8f-9a7d-8b25861826af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.9843775 : 1.8862939453125); (1.9843775 : 3.48839634440104); (2.5 : 3.48839634440104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PartidoDBDataContext/equipo/equipo_fecha1" />
+      <nodes>
+        <classShapeMoniker Id="1e96b115-743a-47c3-93e4-c2fa78914aef" />
+        <classShapeMoniker Id="3586749c-4c35-4d8f-9a7d-8b25861826af" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
